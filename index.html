@@ -2,18 +2,80 @@
 <html>
     <head>
         <title> Jay Graham's Amazing Website </title>
+        <style>
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+        
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: rgb(0, 255, 242);
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            }
+        
+            /* main container area beneath menu */
+            main {
+                background: rgb(255, 2, 65);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 10px rgb(38, 165, 12) ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
     </head>
     
     <body>
         <!--All content goes here -->
-        <div>
+        <div id="all-contents">
             <nav>
                 <h1>This is the best website</h1>
-                <ul>
-                    <li>
+                <ul id="nav-ul">
+                    <li class="nav-li">
                         <a href="index.html"> Home </a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a href="portfolio.html"> Portfolio </a>
                     </li>
                 </ul>
@@ -21,24 +83,24 @@
 
             <main>
                 <!-- Sidebar section -->
-                 <div>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.artstation.com%2Fartwork%2F58LlbP&psig=AOvVaw034ht62-l9ijJRHkYE2zsL&ust=1629564049669000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNii7KaFwPICFQAAAAAdAAAAABAD">
+                 <div class="sidebar">
+                    <img class="sidebar-img" src="https://i.natgeofe.com/k/75ac774d-e6c7-44fa-b787-d0e20742f797/giant-panda-eating.jpg" alt="Gage is stupid">
                  </div>
 
                  <!-- Content section -->
-                <div>
+                <div class="content">
                     <h2>Jay Graham</h2>
                     <p>Student at Mandeville High School</p>
                  </div>
                  <!--Interests Section-->
-                 <div>
+                <div id="interests">
                      <h3>Interests</h3>
                         <ul>
                             <li>Computers</li>
                             <li>Sailing</li>
                             <li>Hanging out with friends</li>
                         </ul>
-                 </div>
+                </div>
             </main>
         </div>
 
