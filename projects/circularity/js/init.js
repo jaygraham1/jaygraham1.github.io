@@ -31,9 +31,9 @@ var init = function (window) {
             circles.push(circle);
             physikz.addRandomVelocity(circle, canvas, 5, 5);
         }
-
+        var numBalls = 270;
         // TODO 3 / 8 : Call the drawCircle() function 
-        for (var i = 0; i < 50; i++){
+        for (var i = 0; i < numBalls; i++){
             drawCircle();
         }
 
@@ -46,15 +46,16 @@ var init = function (window) {
         In each frame, for every circle, it should redraw that circle
         and check to see if it has drifted off the screen.         
         */
+        
         function update() {
             // TODO 4 : Update the circle's position //
             physikz.updatePosition(circle);
-            for (var i = 0; i < 50; i++){
+            for (var i = 0; i < numBalls; i++){
                 physikz.updatePosition(circles[i]);
             }
 
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            for (var i = 0; i < 50; i++){
+            for (var i = 0; i < numBalls; i++){
                 game.checkCirclePosition(circles[i]);
             }
 
